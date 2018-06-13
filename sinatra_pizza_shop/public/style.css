@@ -3,7 +3,35 @@ body {
   background-size: cover;
 }
 
- /* {
-  background-color: hsla(165, 100%, 100%, 0.5);
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
-} */
+nav li {
+  float:left;
+}
+
+nav li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1.6rem 1.8rem;
+  text-decoration: none;
+}
+
+nav li a:hover {
+   background-color: #111;
+}
+
+nav li a:active {
+   background-color: #4CAF50;
+}
+
+.detail_form {
+  background-color: #4CAF50;
+  padding: 1.6rem 1.8rem;
+}
