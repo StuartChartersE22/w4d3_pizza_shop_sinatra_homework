@@ -1,5 +1,7 @@
-require("pry")
+
 class Timer
+
+  attr_reader(:countdown_time)
 
   def initialize(start_point)
     time_as_array = start_point.split(":").reverse()
@@ -32,7 +34,6 @@ class Timer
       unless new_time == Time.now().sec()
         new_time = Time.now().sec()
         @countdown_time -= 1
-        p "#{@countdown_time}"
       end
     end
   end
@@ -44,12 +45,10 @@ class Timer
       unless new_time == Time.now().sec()
         new_time = Time.now().sec()
         @countdown_time -= 1
-        p countdown_time_full()
+        countdown_time_full()
       end
     end
   end
-
-private
 
   def countdown_time_full()
     sec = @countdown_time%60
@@ -59,6 +58,3 @@ private
   end
 
 end
-
-binding.pry
-nil

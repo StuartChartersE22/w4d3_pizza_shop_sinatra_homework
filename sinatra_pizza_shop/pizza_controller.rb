@@ -2,6 +2,7 @@ require( 'sinatra' )
 require( 'sinatra/contrib/all' )
 require( 'pry' )
 require_relative("./models/pizza_order.rb")
+require_relative("./models/timer.rb")
 also_reload("./models/*")
 
 # INDEX
