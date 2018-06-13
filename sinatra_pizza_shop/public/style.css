@@ -8,7 +8,7 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: hsla(0, 100%, 37%, 1);
 }
 
 nav li {
@@ -24,14 +24,54 @@ nav li a{
 }
 
 nav li a:hover {
-   background-color: #111;
+   background-color: #fff;
+   color: hsla(0, 100%, 37%, 1);
 }
 
 nav li a:active {
    background-color: #4CAF50;
 }
 
-.detail_form {
+/* .detail_form {
   background-color: #4CAF50;
   padding: 1.6rem 1.8rem;
+} */
+
+.detail_form input[type=text], select, textarea {
+   width: 100%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-top: 6px;
+   margin-bottom: 16px;
+   resize: vertical;
+}
+
+.detail_form input[type=submit] {
+   background-color: #4CAF50;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.detail_form input[type=submit]:hover {
+   background-color: #45a049;
+}
+
+.detail_form {
+   border-radius: 5px;
+   background-color: hsla(122, 100%, 37%, 0.62);
+   padding: 20px;
+   width: 40%;
+   position: sticky;
+   left:50vh;
+   right:50vh;
+
+}
+.detail_form label {
+  font-weight: bold;
+
 }
