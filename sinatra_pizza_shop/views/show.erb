@@ -1,12 +1,27 @@
-<p>First name: <%= @order.first_name() %></p>
-<p>Last name: <%= @order.last_name() %></p>
-<p>Topping: <%= @order.topping() %></p>
-<p>Quantity: <%= @order.quantity() %></p>
+
+<table>
+  <tr>
+    <td>First name:</td>
+    <td><%= @order.first_name() %></td>
+  </tr>
+  <tr>
+    <td>Last name:</td>
+    <td><%= @order.last_name() %></td>
+  </tr>
+  <tr>
+    <td>Topping:</td>
+    <td><%= @order.topping() %></td>
+  </tr>
+  <tr>
+    <td>Quantity:</td>
+    <td><%= @order.quantity() %></td>
+  </tr>
+</table>
 
 <form action="/pizza-orders/<%= @order.id() %>/delete" method="post">
 
-  <input type="submit" value="Delete order">
+  <input type="submit" value="Delete order" class="button">
 
 </form>
 
-<a href="/pizza-orders/<%= @order.id() %>/edit">Edit order</a>
+<a href="/pizza-orders/<%= @order.id() %>/edit" class="button">Edit order</a>

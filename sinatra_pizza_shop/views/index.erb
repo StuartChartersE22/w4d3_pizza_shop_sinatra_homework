@@ -1,6 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Order</th>
+      <th scope="col">Quantity</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
 <% for order in @orders %>
-  <p>Name: <%= order.pretty_name() %></p>
-  <p>Order: <%= order.quantity() %> of <%= order.topping() %></p>
-  <p> <a href="/pizza-orders/<%= order.id() %>">Details of order</a> </p>
-  <hr />
+  <tr>
+  <td><%= order.pretty_name() %></td>
+  <td><%= order.topping() %></td>
+  <td><%= order.quantity() %></td>
+  <td> <a href="/pizza-orders/<%= order.id() %>">Details of order</a> </td>
+  <tr />
 <% end %>
+</table>
