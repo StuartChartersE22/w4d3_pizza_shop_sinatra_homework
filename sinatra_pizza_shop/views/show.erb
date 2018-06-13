@@ -23,6 +23,17 @@
   <input type="submit" value="Delete order" class="button">
 
 </form>
-
+<!-- <button type="button" name="edit" onclick="editFunction()">Edit order</button> -->
 <a href="/pizza-orders/<%= @order.id() %>/edit" class="button">Edit order</a>
 <a href="/pizza-orders" class="button">Back</a>
+
+<!-- <script>
+function editFunction() {
+    var r = confirm("Press a button!");
+    if (r == true) {
+        action = "/pizza-orders/<%= @order.id() %>/edit";
+    } else {
+        txt = "You pressed Cancel!";
+    };
+}
+</script> -->
