@@ -6,13 +6,13 @@
   <input type="text" name="last_name" id="last-name" value="<%= @order.last_name() %>">
 
   <label for="pizza-select"> Select a pizza:</label>
-  <select id="pizza-select" name="topping" value="<%= @order.topping() %>">
+  <select id="pizza-select" name="topping">
     <option value="Margherita">Margherita</option>
     <option value="Italian sausage">Italian sausage</option>
   </select>
 
   <label for="quantity">Quantity</label>
-  <input type="number" name="quantity" id="quantity" value="@order.quantity()" min="1"/>
+  <input type="number" name="quantity" id="quantity" value="<%= @order.quantity() %>" min="1"/>
 
   <input type="submit" value="Finalise edit">
 </form>
