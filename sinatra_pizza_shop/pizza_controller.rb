@@ -28,3 +28,10 @@ get "/pizza-orders/:id" do
   @order = PizzaOrder.find(id)
   erb(:show)
 end
+
+#DELETE
+post "/pizza-orders/:id/delete" do
+  @order = PizzaOrder.new(params)
+  @order.delete()
+  erb(:delete)
+end
