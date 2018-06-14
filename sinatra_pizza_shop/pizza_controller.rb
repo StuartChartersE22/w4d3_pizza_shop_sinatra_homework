@@ -32,7 +32,7 @@ end
 
 #DELETE
 post "/pizza-orders/:id/delete" do
-  @order = PizzaOrder.new(params)
+  @order = PizzaOrder.find(params[:id])
   @order.delete()
   erb(:delete)
 end
